@@ -1,0 +1,280 @@
+{
+  "results": [
+    {
+      "question": "What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.",
+      "ground_truth": "$1577.00",
+      "llm_only": {
+        "answer": "I don't have the capability to search the internet. However I can guide you through some of the steps needed to obtain this information from 3M's financial statement for that year.\n\nTo find the FY2018 capital expenditure amount for 3M, you can follow these steps:\n\n1. Obtain 3M's annual report for FY2018.\n2. In their FY2018 annual report, go to the cash flow statement section.\n3. Locate the details for 'Cash Flows from Investing Activities'. In this section, you can find information on capital expenditures.\n\nHere is how to find FY2018 capital expenditure in the cash flow statement for 3M:\n\n- Go to 3M's FY2018 annual report\n- Go to the cash flow statement \n- Look under the Investing Activities, then locate 'Additions to property, plant, and equipment'\n- The amount for this category would be the FY2018 capital expenditure.\n\nPlease note, this requires access to 3",
+        "input_tokens": 29,
+        "total_tokens": 272,
+        "context_chunks": 0,
+        "latency": 1.22
+      },
+      "rag": {
+        "answer": "The provided information does not include the FY2018 capital expenditure amount in USD millions. However, we can infer that the capital expenditures from 2020 to 2022 would not be a sufficient basis to calculate 2018's amount. Instead, we have to look into the trend of the purchases of property, plant and equipment (PP&E) from previous years. We need the capital expenditure amount for prior years to establish the trend. Unfortunately, the details for 2018 are not available here.\n\nHowever we do see that\n- 2022  :  -   $1,749\n- 2021  :  -   $1,603\n- 2020  :  -  $\\  1,501$\n\nSo 2020 and 2021's capital expenditures were $1,501 million and $1,603 million respectively, which indicates an increase of  $102 million from 2020 to 2021.\n\nNow we need 2019",
+        "input_tokens": 522,
+        "total_tokens": 1310,
+        "context_chunks": 5,
+        "latency": 1.61
+      },
+      "graphrag": {
+        "answer": "I couldn't find any information related to the company \"3M\" in the provided text. Instead, I see a table with financial data for an entity called \"American Water Works Company, Inc. and Subsidiary Companies.\" However, we can still analyze this data to answer the question.\n\nBased on the provided data, the \"Capital expenditures\" (which seems to represent the capital expenditures of the American Water Works Company, Inc. and Subsidiary Companies) for the FY2018 is:\n\n- $1,586 (millions) as shown under \"CASH FLOWS FROM INVESTING ACTIVITIES\" in the given table",
+        "input_tokens": 478,
+        "total_tokens": 1034,
+        "context_chunks": 1,
+        "latency": 0.85
+      },
+      "token_reduction_vs_rag": 21.1,
+      "llm_judge": "PASS"
+    },
+    {
+      "question": "Assume that you are a public equities analyst. Answer the following question by primarily using information that is shown in the balance sheet: what is the year end FY2018 net PPNE for 3M? Answer in USD billions.",
+      "ground_truth": "$8.70",
+      "llm_only": {
+        "answer": "To calculate the net Property, Plant, and Equipment (PPNE) for 3M at year-end FY2018, we need to refer to the company's 2018 annual report.\n\nAccording to 3M's FY2018 ( Ended May 31, 2018) balance sheet:\n\n- Property, Plant, and Equipment ( PPNE), Net: $18.2 B (in millions)\n\nSince the number above is in millions, we need to divide by 1,000 to get the equivalent in billions.\n\n$18.2 B /  1,000  = $18.2 billion",
+        "input_tokens": 37,
+        "total_tokens": 209,
+        "context_chunks": 0,
+        "latency": 0.51
+      },
+      "rag": {
+        "answer": "To find the net Property, Plant, and Equipment (PPNE) for FY 2018, we need to look at the 'Property, plant and equipment net' line on the balance sheet for the year end FY 2018, which is shown as $8,738 million.\n\nTo express this in billions of USD, we divide by 1,000 million, which is equivalent to 1 billion.\n\nNet PPNE for FY 2018 = $8,738,000,000 / 1,000,000,000 = 8.738 billion\nRounded to two decimal places, this is approximately $8.74 billion.\n\nAlternatively, we can also calculate it as follows: \n\nTotal property and equipment for the FY 2018 = $24,873 million.\nAccumulated depreciation = $16,135 million.\n\nFirst, we find the 'Property, plant and equipment' for the year by adding these two, which equals $40,008 million.\nHowever",
+        "input_tokens": 720,
+        "total_tokens": 1859,
+        "context_chunks": 5,
+        "latency": 1.11
+      },
+      "graphrag": {
+        "answer": "To answer the question, I would need to access the 3M company's balance sheet for the fiscal year 2018. I'll use publicly available data from the company's SEC filings and annual reports.\n\nFor 3M's FY2018 net PPNE (Property, Plant, and Equipment, net), we need to refer to the company's consolidated balance sheet.\n\nAccording to 3M's 2018 Annual Report (Form 10-K), the company's consolidated Balance Sheet for December 31, 2018, is as follows:\n\n- Property, Plant, and Equipment, gross: $18,419 million\n- Accumulated depreciation: $11,444 million\n- Property, Plant, and Equipment, net: $6,975 million\n\nHowever, 1 billion USD is approximately $1,000 million. Therefore: $6,975 million is approximately $6.975 billion USD.\n\nHowever, the net PPNE value might be higher if we add back any deferred",
+        "input_tokens": 552,
+        "total_tokens": 991,
+        "context_chunks": 1,
+        "latency": 5.99
+      },
+      "token_reduction_vs_rag": 46.7,
+      "llm_judge": "PASS"
+    },
+    {
+      "question": "Is 3M a capital-intensive business based on FY2022 data?",
+      "ground_truth": "No, the company is managing its CAPEX and Fixed Assets pretty efficiently, which is evident from below key metrics:\nCAPEX/Revenue Ratio: 5.1%\nFixed assets/Total Assets: 20%\nReturn on Assets= 12.4%",
+      "llm_only": {
+        "answer": "To determine if 3M is a capital-intensive business, I will use the FY2022 data. \n\nA general rule of thumb for defining capital intensity is the \"Capital Expenditure (CapEx) to Revenue\" ratio. This ratio indicates the percentage of a company's revenue that is invested in capital expenditures, such as property, plant, and equipment.\n\nFor 3M's FY2022, the data is as follows:\n- Revenue: $31.72 billion (USD)\n- Capital Expenditures: $1.35 billion (USD)\n\nTo calculate the \"CapEx to Revenue\" ratio:\n1. Divide the capital expenditure by revenue: \n$1.35 billion / $31.72 billion = 0.0426\n2. Multiply by 100 to convert to a percentage: \n0.0426 * 100 = 4.26%\n\nGiven this ratio, we can conclude that 3M is moderately capital-intensive.",
+        "input_tokens": 9,
+        "total_tokens": 245,
+        "context_chunks": 0,
+        "latency": 2.74
+      },
+      "rag": {
+        "answer": "Based on the provided FY2022 data, let's evaluate 3M's capital intensity.\n\nTo determine if 3M is a capital-intensive business, we need to look at the relationship between its assets and liabilities. \n\nOne common measure of capital intensity is the asset turnover ratio, which compares a company's sales to its total assets. However, we are given limited information about the sales. \n\nAnother approach is to compare the current liabilities to total assets, and then examine the property, plant, and equipment (PP&E) to total assets ratio. A company is considered highly capital-intensive if it has high PP&E relative to its total assets. \n\nIn the provided data, the FY2022 total assets for 3M are $46,455 million. The short-term borrowings and current portion of long-term debt ($1,938 million), which we can consider a current liability, is roughly 4.2% of the total assets.\n\nAs for the property, plant, and equipment",
+        "input_tokens": 489,
+        "total_tokens": 1333,
+        "context_chunks": 5,
+        "latency": 13.96
+      },
+      "graphrag": {
+        "answer": "The provided information isn't for FY 2022. The data only goes up to 2021 for the American Water Works Company, Inc. To answer whether 3M is a capital-intensive business, let's look at their financial data.\n\nUnfortunately, there's no provided data related to 3M. However, generally speaking, a capital-intensive business is one that requires a significant amount of investment in assets, such as property, plant, and equipment. \n\nTo assess whether 3M is capital-intensive, you would typically look at various metrics such as:\n\n1. Capital Expenditures (CapEx): High CapEx is often indicative of a capital-intensive business.\n2. Asset Turnover Ratio: High assets often indicate high capital investments, but lower asset turnover may suggest capital intensity.\n3. Depreciation and Amortization (D&A) Expenses: High D&A expenses are often a result of significant investments in assets, such as property, plant, and equipment.\n4. Return",
+        "input_tokens": 218,
+        "total_tokens": 648,
+        "context_chunks": 1,
+        "latency": 5.85
+      },
+      "token_reduction_vs_rag": 51.4,
+      "llm_judge": "FAIL"
+    },
+    {
+      "question": "What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.",
+      "ground_truth": "Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to: \n-Decrease in gross Margin\n-mostly one-off charges including Combat Arms Earplugs litigation, impairment related to exiting PFAS manufacturing, costs related to exiting Russia and divestiture-related restructuring\ncharges",
+      "llm_only": {
+        "answer": "As of FY2022, 3M experienced a decline in its operating margin. This can be attributed to several factors, primarily related to inflation and supply chain disruptions, which led to increased costs for the company.\n\n1. **Inflation**: Rising inflation rates led to higher costs for raw materials, labor, and other expenses, eating into 3M's profit margins.\n2. **Supply chain disruptions**: Disruptions in the supply chain, particularly in the Asia region, resulted in higher costs and lower margins due to difficulties in sourcing materials and maintaining production levels.\n3. **Global economic uncertainty**: Geopolitical tensions, the ongoing COVID-19 pandemic, and other global economic factors contributed to a slowdown in demand and higher costs, negatively impacting 3M's operating margin.\n4. **Higher manufacturing costs**: The company invested in new manufacturing capabilities to meet growing demand, but this also led to higher costs, including increased labor and overhead expenses.\n\nHowever, operating margin is indeed a useful metric for",
+        "input_tokens": 30,
+        "total_tokens": 272,
+        "context_chunks": 0,
+        "latency": 3.7
+      },
+      "rag": {
+        "answer": "To analyze the operating margin change, we need to look at the operating income and total revenue over time. The operating income for 2022 was $1.3 billion, compared to $3.6 billion for 2021, which represents a decrease of 64%.\n\nThe operating margin is calculated as (Operating Income / Total Revenue) * 100. However, the total revenue is not provided directly for the consolidated period. Instead, we have segment results and sales analysis for the fiscal years.\n\nUsing the global sales data provided, we can see that the worldwide sales increased by 1.3% in 2022 compared to 13.6% in 2021. The sales changes consisted of:\n\n- Volume: 6.9% increase in 2022 and 12.9% in 2021\n- Price: -0.8% in 2022 and -0.7% in 2021\n- Currency: -4.8% in ",
+        "input_tokens": 758,
+        "total_tokens": 1892,
+        "context_chunks": 5,
+        "latency": 18.9
+      },
+      "graphrag": {
+        "answer": "To answer your question about 3M, I would need more information or data about how operating margins changed for the company as of FY2022. However, according to 3M's annual report for the year ending December 31, 2022 (FY2022), operating income and operating margins did vary from the previous year due to several factors.\n\nOne major change in 2022 is that the company experienced rising material costs and a strong US dollar. As a result, these factors reduced 3M's profit margin and impacted its operating margin.\n\nHowever, the company also implemented various cost-saving initiatives and divested some non-core businesses to improve its operating efficiency.\n\nOperating Margin for 3M as of FY2022 is 18.8% (as per the company's annual report for the year ending December 31, 2022), down from the previous year's margin of 20.5%. So to answer your question, operating margin change for 3M as of",
+        "input_tokens": 395,
+        "total_tokens": 706,
+        "context_chunks": 1,
+        "latency": 7.43
+      },
+      "token_reduction_vs_rag": 62.7,
+      "llm_judge": "PASS"
+    },
+    {
+      "question": "If we exclude the impact of M&A, which segment has dragged down 3M's overall growth in 2022?",
+      "ground_truth": "The consumer segment shrunk by 0.9% organically.",
+      "llm_only": {
+        "answer": "I cannot look up information on a specific 2022 3M's overall growth due to potential limited data.",
+        "input_tokens": 17,
+        "total_tokens": 84,
+        "context_chunks": 0,
+        "latency": 3.3
+      },
+      "rag": {
+        "answer": "To determine which segment has dragged down 3M's overall growth in 2022, excluding the impact of M&A, we need to analyze each segment's growth individually.\n\nWe are given the overall growth in 2022 as 1.3%, with volume up 6.9% and currency down by 4.8%. This implies that the price component is actually contributing negatively, down by 0.8%.\n\nLooking at the revenue breakdown by geographic area, we can see:\n\n- United States: Revenue down 45% for the three months ended and 27% for the six months ended compared to the prior year.\n- Developed Europe: Revenue down by 56% and 55% for the three and six months ended, respectively.\n- Developed Rest of World: Revenue down by 74% for the three months ended and 55% for the six months ended.\n- Emerging Markets: Revenue down by 53% for the three months ended and 45% for the",
+        "input_tokens": 262,
+        "total_tokens": 742,
+        "context_chunks": 5,
+        "latency": 5.75
+      },
+      "graphrag": {
+        "answer": "Based on the given information, it is not explicitly stated which segment contributed to the drag on 3M's overall growth in 2022. The SG&A increase is attributed to various special item costs, impairment costs, divestiture-related restructuring charges, and investment in key growth initiatives. \n\nHowever, we can infer that the segment related to Combat Arms Earplugs litigation could be a significant contributor to the drag on 3M's growth, given the $1.2 billion pre-tax charge. It would be beneficial to consult other data or sources to determine which specific segment within 3M was most affected by these costs.",
+        "input_tokens": 121,
+        "total_tokens": 337,
+        "context_chunks": 1,
+        "latency": 3.65
+      },
+      "token_reduction_vs_rag": 54.6,
+      "llm_judge": "FAIL"
+    },
+    {
+      "question": "Does 3M have a reasonably healthy liquidity profile based on its quick ratio for Q2 of FY2023? If the quick ratio is not relevant to measure liquidity, please state that and explain why.",
+      "ground_truth": "No. The quick ratio for 3M was 0.96 by Jun'23 close, which needs a bit of an improvement to touch the 1x mark",
+      "llm_only": {
+        "answer": "To assess 3M's liquidity profile, we would need to know its actual quick ratio (also known as the acid-test ratio) for Q2 of FY2023. The quick ratio is calculated by dividing the sum of a company's current assets (less inventory) by its current liabilities.\n\nThe quick ratio is relevant for measuring liquidity. It shows a company's ability to pay its short-term debts using its liquid assets (excluding inventory). A high quick ratio indicates a healthy liquidity position, as the company has a sufficient amount of cash or assets that can be quickly converted to cash to pay its current liabilities.\n\nHowever, I couldn't find the actual quick ratio for 3M's Q2 FY2023. If the quick ratio is available, here's how you can assess its liquidity based on it:\n\nTo evaluate the liquidity profile of 3M using the quick ratio for Q2 of FY2023, you can use the following steps:\n\n1. Look up the current assets, current liabilities",
+        "input_tokens": 33,
+        "total_tokens": 276,
+        "context_chunks": 0,
+        "latency": 2.69
+      },
+      "rag": {
+        "answer": "To assess 3M's liquidity profile, we need to calculate its quick ratio. The quick ratio is a liquidity measure that takes into account the company's most liquid assets (cash, accounts receivable, and short-term investments) relative to its current liabilities. It is calculated by dividing the sum of these liquid assets by the current liabilities.\n\nFrom the provided data, we can calculate the quick ratio for Q2 of FY2023 as follows:\n\nLiquid Assets:\n- Cash and cash equivalents: $4,258 (June 30, 2023)\n- Marketable securities current: $56 (June 30, 2023)\n- Accounts receivable (net of allowances): $4,947 (June 30, 2023)\n\nTotal Liquid Assets: $4,258 + $56 + $4,947 = $9,261\n\nCurrent Liabilities: $10,936 (June 30, 2023)\n\nQuick Ratio (Q2 FY2023): $9,",
+        "input_tokens": 580,
+        "total_tokens": 1433,
+        "context_chunks": 5,
+        "latency": 14.85
+      },
+      "graphrag": {
+        "answer": "To assess 3M's liquidity profile based on its quick ratio for Q2 of FY2023, we need to know the actual quick ratio value. Unfortunately, the prompt does not provide this information.\n\nHowever, I can explain what the quick ratio is and how it relates to liquidity.\n\nThe quick ratio, also known as the acid-test ratio, is a liquidity metric that calculates a company's ability to pay its short-term debts by dividing its current assets (less inventory) by its current liabilities. It gives a good idea of a company's ability to meet its short-term obligations using its liquid assets.\n\nA higher quick ratio typically indicates a healthier liquidity profile. However, it's essential to keep in mind that the quick ratio focuses on current assets and liabilities, which might not accurately represent a company's ability to generate cash or meet long-term obligations.\n\nIf the quick ratio for Q2 of FY2023 is not provided, it's difficult to assess 3M's liquidity profile using this metric.\n\n",
+        "input_tokens": 468,
+        "total_tokens": 797,
+        "context_chunks": 1,
+        "latency": 7.96
+      },
+      "token_reduction_vs_rag": 44.4,
+      "llm_judge": "PASS"
+    },
+    {
+      "question": "Which debt securities are registered to trade on a national securities exchange under 3M's name as of Q2 of 2023?",
+      "ground_truth": "Following debt securities registered under 3M's name are listed to trade on the New York Stock Exchange:\n-1.500% Notes due 2026 (Trading Symbol: MMM26)\n-1.750% Notes due 2030 (Trading Symbol: MMM30)\n-1.500% Notes due 2031 (Trading Symbol: MMM31)",
+      "llm_only": {
+        "answer": "Unfortunately, I can't give you real-time information. I can't access specific information on the 3M company as of Q2 of 2023. \n\nHowever, I can suggest some ways you can find this information. \n\nAs of my cut-off knowledge in 2023, 3M issued debt securities under various series. \n\nTo get the most up-to-date information about 3M's debt securities, I would recommend visiting the Securities and Exchange Commission (SEC) website at [www.sec.gov](http://www.sec.gov). The EDGAR database on the SEC website contains information filed by public companies, including 3M.\n\nAdditionally, you can also check the websites of major exchanges such as the New York Stock Exchange (NYSE), NASDAQ, or Bloomberg for listing information on 3M's debt securities.\n\nIf you're looking for more specific information on 3M's debt securities as of Q2 2023, I suggest contacting 3M's investor relations",
+        "input_tokens": 20,
+        "total_tokens": 262,
+        "context_chunks": 0,
+        "latency": 2.63
+      },
+      "rag": {
+        "answer": "Unfortunately, the provided information does not contain any data about 3M. The balance sheets provided belong to Johnson & Johnson, The Kraft Heinz Company, and General Mills, Inc.\n\nHowever, if you are referring to 3M's parent company or similar information related to the Johnson & Johnson company or its subsidiary, you could look at the 'Fair value level' section in Johnson & Johnson's balance sheet as of June 30, 2023.\n\nFor fair value level as of June 30, 2023, the 'Commercial paper and certificates of deposit' under 'Cash and cash equivalents' is classified under Level 2, which is not typically registered to trade on a national securities exchange (as they are more of cash equivalents). \n\nTo get information on what debt securities might be registered under Johnson & Johnson's name, we might want to check further sections of the balance sheets, but in this provided data we don't have specific debt securities that are registered to trade on a national",
+        "input_tokens": 847,
+        "total_tokens": 2469,
+        "context_chunks": 5,
+        "latency": 24.95
+      },
+      "graphrag": {
+        "answer": "I can't verify which debt securities are registered to trade on a national securities exchange under 3M's name as of the second quarter of 2023. However, I can check some general information on 3M's debt securities.\n\nTo find current and accurate information about the specific debt securities under 3M's name, I suggest the following options:\n\n1. Check with the Securities and Exchange Commission (SEC) directly to view publicly available filings, including recent 10-K and 10-Q reports, for 3M Company. This might provide detailed information on outstanding debt securities.\n2. Consult financial databases or online resources that specialize in corporate debt securities, such as Bloomberg or S&P Global Market Intelligence (which is a Standard & Poor's division), for recent information on 3M's outstanding debt.",
+        "input_tokens": 349,
+        "total_tokens": 628,
+        "context_chunks": 1,
+        "latency": 6.84
+      },
+      "token_reduction_vs_rag": 74.6,
+      "llm_judge": "PASS"
+    },
+    {
+      "question": "Does 3M maintain a stable trend of dividend distribution?",
+      "ground_truth": "Yes, not only they distribute the dividends on a routine basis, 3M has also been increasing the per share dividend for consecutive 65 years",
+      "llm_only": {
+        "answer": "3M (formerly known as Minnesota Mining and Manufacturing Company) has a long history of consistently paying and increasing its dividend. Here are some key points to assess its stability:\n\n1. **History of dividend payments:** 3M has paid a dividend to its shareholders for an impressive 101 years (since 1916). This demonstrates its commitment to dividend payments and its financial stability.\n\n2. **Consistency of dividend payments:** The company has maintained a consistent dividend payout for decades, with a relatively low year-to-year variability. Even during challenging economic periods, 3M has managed to pay and increase its dividend, showing its stability.\n\n3. **Dividend growth rate:** 3M has a track record of increasing its dividend annually, often by a significant margin. The annual dividend growth rate varies but has historically averaged around 8-10%. This long-term dividend growth rate has been impressive and demonstrates the company's ability to consistently increase its dividend payouts.\n\n4. **Dividend yield:** ",
+        "input_tokens": 9,
+        "total_tokens": 247,
+        "context_chunks": 0,
+        "latency": 2.66
+      },
+      "rag": {
+        "answer": "Yes, 3M maintains a stable trend of dividend distribution. The passage highlights that 2023 marks the 65th consecutive year of dividend increases for 3M, indicating a long-standing history of stability in their dividend distribution.",
+        "input_tokens": 175,
+        "total_tokens": 349,
+        "context_chunks": 5,
+        "latency": 4.31
+      },
+      "graphrag": {
+        "answer": "To answer your first question about stock dividends, we've already established that from the company's accounting perspective, they don't really change the value of the shareholder's holdings. Companies declare stock dividends, also known as bonus shares, for reasons such as reducing an existing balance in retained earnings and thereby having the option to reinvest it without having to declare a cash dividend. They may also aim to create the illusion that shareholders are receiving a real dividend.\n\nNow, regarding 3M's stable trend of dividend distribution, let's verify this from reliable sources.\n\nFrom 3M's official Investor Relations site: '3M has a long history of paying dividends to its shareholders. 3M has paid continuous dividends since 1916 and has increased its dividend each year for more than 100 years.' \n\nAs of 2023, 3M has maintained its position in the S&P Dividend Aristocrats Index, which includes stocks that have increased their dividends for at least 25 consecutive years.\n\nTherefore",
+        "input_tokens": 508,
+        "total_tokens": 856,
+        "context_chunks": 1,
+        "latency": 7.9
+      },
+      "token_reduction_vs_rag": -145.3,
+      "llm_judge": "PASS"
+    },
+    {
+      "question": "What is the FY2019 fixed asset turnover ratio for Activision Blizzard? Fixed asset turnover ratio is defined as: FY2019 revenue / (average PP&E between FY2018 and FY2019). Round your answer to two decimal places. Base your judgments on the information provided primarily in the statement of income and the statement of financial position.",
+      "ground_truth": "24.26",
+      "llm_only": {
+        "answer": "To calculate the fixed asset turnover ratio, we need to find Activision Blizzard's FY2019 revenue and the average property, plant, and equipment (PP&E) between FY2018 and FY2019.\n\nHowever, I do not have direct access to Activision Blizzard's financial statements. I can guide you on how to look up the necessary information and how to calculate the ratio.\n\n1. Find Activision Blizzard's FY2019 revenue from their statement of income. (It can be found in Form 10-K, which is an annual report submitted by a publicly traded company to the Securities and Exchange Commission (SEC). You can find this information on EDGAR.)\n\n2. Find the following information for Activision Blizzard from their statement of financial position:\n   - Property, plant, and equipment (PP&E) for FY2018\n   - Property, plant, and equipment (PP&E) for FY2019\n\n3. Calculate the average PP&E between FY2018 and FY201",
+        "input_tokens": 53,
+        "total_tokens": 304,
+        "context_chunks": 0,
+        "latency": 2.62
+      },
+      "rag": {
+        "answer": "To calculate the fixed asset turnover ratio for FY2019, we need to first find the average PP&E between FY2018 and FY2019.\n\nThe PP&E for FY2019 is $253 million, and for FY2018, it is $282 million.\n\nAverage PP&E = (PP&E FY2019 + PP&E FY2018) / 2\n= ($253 million + $282 million) / 2\n= $268.5 million\n\nThe revenue for FY2019 is $6,489 million (from the Statement of Operations).\n\nFixed Asset Turnover Ratio = FY2019 Revenue / Average PP&E\n= $6,489 million / $268.5 million\n= 24.14 (rounded to two decimal places)\n\nSo, the FY2019 fixed asset turnover ratio for Activision Blizzard is approximately 24.14.",
+        "input_tokens": 1208,
+        "total_tokens": 2702,
+        "context_chunks": 5,
+        "latency": 27.91
+      },
+      "graphrag": {
+        "answer": "To find the fixed asset turnover ratio for Activision Blizzard in FY2019, we need to gather the required information from the statement of income and the statement of financial position.\n\n1. **FY2019 Revenue**: According to Activision Blizzard's FY2019 annual report, the revenue is $8,356.0 million.\n\n2. **Average PP&E between FY2018 and FY2019**: \n   - **FY2019 PP&E**: $2,439.0 million\n   - **FY2018 PP&E**: $3,124.0 million\n   We will average these two values to get the average PP&E.\n   - **Average PP&E**: ($2,439.0 million + $3,124.0 million) / 2\n   - **Average PP&E**: $2,781.5 million",
+        "input_tokens": 568,
+        "total_tokens": 919,
+        "context_chunks": 1,
+        "latency": 9.43
+      },
+      "token_reduction_vs_rag": 66.0,
+      "llm_judge": "FAIL"
+    },
+    {
+      "question": "What is the FY2017 - FY2019 3 year average of capex as a % of revenue for Activision Blizzard? Answer in units of percents and round to one decimal place. Calculate (or extract) the answer from the statement of income and the cash flow statement.",
+      "ground_truth": "1.9%",
+      "llm_only": {
+        "answer": "To answer your question, I'm going to use the following steps:\n\n1. Find the income statement and cash flow statement for Activision Blizzard for each year from 2017 to 2019.\n2. Calculate capital expenditures (capex) for each year.\n3. Calculate revenue for each year.\n4. Calculate the percentage of capex to revenue for each year.\n5. Calculate the 3-year average of capex to revenue.\n\nUnfortunately, I do not have direct access to financial statements, so I will rely on publicly available data.\n\nAccording to the Securities and Exchange Commission (SEC) filings available online:\n\n- Activision Blizzard's FY2017 Income Statement\n  Revenue: 6,885 million dollars \n  Capital Expenditures (capex): 141 million dollars \n\n- Activision Blizzard's FY2018 Income Statement\n  Revenue: 7,472 million dollars \n  Capital Expenditures (capex): 144 million dollars\n\n- Activision Blizzard's FY",
+        "input_tokens": 45,
+        "total_tokens": 293,
+        "context_chunks": 0,
+        "latency": 3.56
+      },
+      "rag": {
+        "answer": "Unfortunately, the provided financial statements do not include a cash flow statement. However, we can calculate capital expenditures (capex) by subtracting net income from net change in cash from the statement of cash flows. \n\nAlthough it's challenging to provide an accurate answer, we can use net income to estimate capex for each year using a general rule of thumb (net income + depreciation) to estimate free cash flow, and subtract that from the net change in cash. \n\nHere's the process to estimate capex as a percentage of revenue:\n\n1. Calculate the free cash flow for FY 2017, 2018, and 2019 using an assumption:\n    - Depreciation and amortization in FY 2017: 433 (sum of 'Cost of revenuessubscription, licensing, and other' costs which consist of amortization, and other cost of revenue costs).\n    - We assume depreciation to be a significant contributor, similar to FY 2018 (which was ",
+        "input_tokens": 796,
+        "total_tokens": 1843,
+        "context_chunks": 5,
+        "latency": 18.65
+      },
+      "graphrag": {
+        "answer": "To calculate the 3-year average of capex as a percentage of revenue, we need to find the capex and revenue values for each year.\n\nCapex (Capital expenditures) can be found in the cash flow statement:\n\n- FY2017: -155\n- FY2018: -131\n- FY2019: -116\n\nRevenue can be found in the income statement (assuming the statement provided is the balance sheet and is the income statement is the next sheet of this annual report. It should be on a separate sheet but since the answer to calculate capex as percentage of revenue can be extracted from the cash flow sheet alone, we do not necessarily need it for calculations):\n\n- FY2017 Net income is $273 million. However, this is not the revenue.\n- FY2017 Adjustments to reconcile net income to net cash provided by operating activities: 'Depreciation and amortization' is $888 million. This implies total revenue is $273 + $888 = $",
+        "input_tokens": 431,
+        "total_tokens": 1049,
+        "context_chunks": 1,
+        "latency": 10.12
+      },
+      "token_reduction_vs_rag": 43.1,
+      "llm_judge": "PASS"
+    }
+  ],
+  "summary": {
+    "graphrag_bertscore": 0.8219,
+    "rag_bertscore": 0.8213,
+    "judge_pass_rate": 70.0,
+    "avg_token_reduction": 31.9
+  }
+}
