@@ -1,0 +1,9 @@
+# .gitignore
+.env
+__pycache__/
+data/chroma/
+10-k.zip
+*.pyc
+graphrag/
+make_token.py
+try1.py
